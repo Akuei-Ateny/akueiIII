@@ -94,7 +94,7 @@
   }
 }
 
-/* Enhanced custom animations for the portfolio */
+/* Princeton Tiger-themed animations */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -117,23 +117,31 @@
   }
 }
 
-@keyframes slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+@keyframes tiger-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(234, 88, 12, 0.4);
+    transform: scale(1);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  50% {
+    box-shadow: 0 0 40px rgba(234, 88, 12, 0.8);
+    transform: scale(1.05);
   }
 }
 
-@keyframes glow {
+@keyframes tiger-float {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+    transform: translateY(0px) rotate(0deg) translateX(-100px);
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.8;
   }
   50% {
-    box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
+    transform: translateY(-30px) rotate(180deg) translateX(50px);
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.9;
   }
 }
 
@@ -199,53 +207,49 @@
   }
 }
 
-@keyframes matrix-rain {
-  0% {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh);
-    opacity: 0;
-  }
-}
-
-@keyframes cyber-pulse {
+@keyframes orange-glow {
   0%, 100% {
-    box-shadow: 
-      0 0 5px rgba(6, 182, 212, 0.5),
-      0 0 20px rgba(6, 182, 212, 0.3),
-      0 0 35px rgba(6, 182, 212, 0.1);
+    text-shadow: 
+      0 0 5px rgba(234, 88, 12, 0.8),
+      0 0 10px rgba(234, 88, 12, 0.6),
+      0 0 20px rgba(234, 88, 12, 0.4);
   }
   50% {
-    box-shadow: 
-      0 0 10px rgba(6, 182, 212, 0.8),
-      0 0 40px rgba(6, 182, 212, 0.5),
-      0 0 70px rgba(6, 182, 212, 0.3);
+    text-shadow: 
+      0 0 10px rgba(234, 88, 12, 1),
+      0 0 20px rgba(234, 88, 12, 0.8),
+      0 0 40px rgba(234, 88, 12, 0.6);
   }
 }
 
 @keyframes neon-glow {
   0%, 100% {
     text-shadow: 
-      0 0 5px rgba(6, 182, 212, 0.8),
-      0 0 10px rgba(6, 182, 212, 0.6),
-      0 0 20px rgba(6, 182, 212, 0.4);
+      0 0 5px rgba(234, 88, 12, 0.8),
+      0 0 10px rgba(234, 88, 12, 0.6),
+      0 0 20px rgba(234, 88, 12, 0.4);
   }
   50% {
     text-shadow: 
-      0 0 10px rgba(6, 182, 212, 1),
-      0 0 20px rgba(6, 182, 212, 0.8),
-      0 0 40px rgba(6, 182, 212, 0.6);
+      0 0 10px rgba(234, 88, 12, 1),
+      0 0 20px rgba(234, 88, 12, 0.8),
+      0 0 40px rgba(234, 88, 12, 0.6);
   }
 }
 
+@keyframes princeton-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation classes */
 .animate-fade-in {
   animation: fade-in 0.8s ease-out forwards;
 }
@@ -254,12 +258,12 @@
   animation: scale-in 0.6s ease-out forwards;
 }
 
-.animate-slide-up {
-  animation: slide-up 0.8s ease-out forwards;
+.animate-tiger-pulse {
+  animation: tiger-pulse 2s ease-in-out infinite;
 }
 
-.animate-glow {
-  animation: glow 2s ease-in-out infinite;
+.animate-tiger-float {
+  animation: tiger-float 8s ease-in-out infinite;
 }
 
 .animate-float {
@@ -278,88 +282,70 @@
   animation: float-2 20s linear infinite;
 }
 
-.animate-matrix-rain {
-  animation: matrix-rain 8s linear infinite;
-}
-
-.animate-cyber-pulse {
-  animation: cyber-pulse 2s ease-in-out infinite;
+.animate-orange-glow {
+  animation: orange-glow 2s ease-in-out infinite;
 }
 
 .animate-neon-glow {
   animation: neon-glow 2s ease-in-out infinite;
 }
 
-/* Enhanced gradient backgrounds */
-.bg-gradient-cosmic {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.animate-princeton-wave {
+  background-size: 400% 400%;
+  animation: princeton-wave 3s ease-in-out infinite;
 }
 
-.bg-gradient-sunset {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+/* Princeton-themed gradient backgrounds */
+.bg-gradient-tiger {
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #000000 100%);
 }
 
-.bg-gradient-ocean {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+.bg-gradient-princeton {
+  background: linear-gradient(135deg, #000000 0%, #ea580c 50%, #000000 100%);
 }
 
-.bg-gradient-cyber {
-  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%);
+.bg-gradient-orange-fire {
+  background: linear-gradient(135deg, #ff4500 0%, #ea580c 50%, #dc2626 100%);
 }
 
-/* Enhanced glassmorphism effect */
-.glass {
-  background: rgba(255, 255, 255, 0.05);
+/* Enhanced glassmorphism with orange tint */
+.glass-tiger {
+  background: rgba(234, 88, 12, 0.1);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(234, 88, 12, 0.2);
 }
 
-.glass-dark {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Custom scrollbar with cyber theme */
+/* Custom scrollbar with Princeton orange */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
 }
 
-/* Cyber grid background */
-.cyber-grid {
+/* Tiger grid background */
+.tiger-grid {
   background-image: 
-    linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(234, 88, 12, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234, 88, 12, 0.1) 1px, transparent 1px);
   background-size: 50px 50px;
 }
 
-/* Holographic text effect */
-.holographic {
-  background: linear-gradient(45deg, #06b6d4, #8b5cf6, #ec4899, #f59e0b);
+/* Princeton holographic text effect */
+.holographic-tiger {
+  background: linear-gradient(45deg, #ea580c, #f97316, #fb923c, #fdba74, #000000);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: holographic-shift 3s ease-in-out infinite;
-}
-
-@keyframes holographic-shift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+  animation: princeton-wave 3s ease-in-out infinite;
 }
