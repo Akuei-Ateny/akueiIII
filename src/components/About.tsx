@@ -133,8 +133,9 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer and computer science student at Princeton University, 
-            dedicated to creating innovative solutions that bridge technology and human needs with Tiger Pride! 🐅
+          I'm a passionate full-stack developer and computer science student at Princeton University, 
+          driven to build innovative, human-centered solutions that harness the power of technology 
+          to solve real-world problems.
           </p>
         </div>
 
@@ -162,17 +163,21 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent mb-6 animate-neon-glow">
-                My Princeton Journey 🐅
+                My Career Journey 🐅
               </h3>
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                As a rising senior at Princeton University pursuing a B.S.E in Computer Science with a minor in 
-                Statistics and Machine Learning, I've had the privilege of working on cutting-edge projects with 
-                <span className="text-orange-400 font-semibold"> Orange & Black excellence</span>.
+                As a BSE Computer Science major, my journey has been a deep dive into software engineering, 
+                technology, and innovation. Through internships and hands-on experiences, I’ve built a strong 
+                technical foundation while also developing problem-solving, teamwork, and project management 
+                skills. My passion for AI and Machine Learning has driven me to explore both the theoretical 
+                and practical sides of technology. With each opportunity, I’ve gained valuable insights into 
+                software development and how to create impactful solutions. I’m excited to keep growing and 
+                contributing to the ever-evolving world of computer science and software engineering.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 My experience ranges from developing high-performance mobile applications to implementing machine 
                 learning models for medical image classification. I'm passionate about creating technology that 
-                makes a meaningful impact on people's lives with <span className="text-orange-400 font-semibold">Tiger Pride</span>! 🐅
+                makes a meaningful impact on people's lives!
               </p>
             </div>
             

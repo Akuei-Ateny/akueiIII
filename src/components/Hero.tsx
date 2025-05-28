@@ -4,19 +4,19 @@ import { ArrowDown, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const codeSnippets = [
-    'const princeton = () => "Tiger Pride";',
-    'function excellence() { return "Orange & Black"; }',
+    'const computerScience = () => "My Passion";',
+    'function excellence() { return "Technology"; }',
     'class Tiger extends Developer {}',
-    'if (princeton) { makeItHappen(); }',
+    'if (possible) { makeItHappen(); }',
     'while (coding) { createMagic(); }',
     'const passion = new Innovation();',
     'return success.map(dream => reality);',
     'async function buildFuture() {}',
     'const skills = [...technologies];',
     'export default Excellence;',
-    'console.log("Go Tigers! 🐅");',
+    'console.log("Go Akuei III! 🐅");',
     'const akuei = new FullStackDev();',
-    'princeton.students.includes(akuei);',
+    'developer.students.includes(akuei);',
     'while(true) { innovate(); }',
     'const success = await hardwork();'
   ];
