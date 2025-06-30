@@ -4,19 +4,19 @@ import { ArrowDown, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const codeSnippets = [
-    'const princeton = () => "Tiger Pride";',
-    'function excellence() { return "Orange & Black"; }',
+    'const computerScience = () => "My Passion";',
+    'function excellence() { return "Technology"; }',
     'class Tiger extends Developer {}',
-    'if (princeton) { makeItHappen(); }',
+    'if (possible) { makeItHappen(); }',
     'while (coding) { createMagic(); }',
     'const passion = new Innovation();',
     'return success.map(dream => reality);',
     'async function buildFuture() {}',
     'const skills = [...technologies];',
     'export default Excellence;',
-    'console.log("Go Tigers! 🐅");',
+    'console.log("Go Akuei III! 🐅");',
     'const akuei = new FullStackDev();',
-    'princeton.students.includes(akuei);',
+    'developer.students.includes(akuei);',
     'while(true) { innovate(); }',
     'const success = await hardwork();'
   ];
@@ -101,7 +101,7 @@ const Hero = () => {
               Akuei III
             </span>
             <span className="block text-4xl sm:text-5xl lg:text-6xl bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent mt-2 animate-scale-in delay-300 animate-neon-glow">
-              Princeton Tiger 🐅 | Full Stack Innovator
+              Machine Learning Enthusiast | Full Stack Innovator
             </span>
           </h1>
           
@@ -111,7 +111,7 @@ const Hero = () => {
           </p>
           
           <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in delay-700">
-            Transforming innovative ideas into scalable solutions with Princeton Tiger spirit. 
+            Transforming innovative ideas into scalable solutions with codes. 
             Creating technology that bridges possibility and reality, one line of code at a time.
           </p>
 
@@ -144,7 +144,7 @@ const Hero = () => {
             href="#about"
             className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-500 hover:to-orange-600 text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 animate-fade-in delay-1200 animate-tiger-pulse"
           >
-            <span>Explore My Tiger Universe 🐅</span>
+            <span>Explore My Tech Universe 🐅</span>
             <ArrowDown className="h-5 w-5 animate-bounce" />
           </a>
         </div>
